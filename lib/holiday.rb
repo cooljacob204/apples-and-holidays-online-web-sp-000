@@ -61,7 +61,11 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{season.to_s.capitalize}:"
     holidays.each do |holiday, supplies|
       season_holidays = ""
+<<<<<<< HEAD
       season_holidays << "#{holiday.to_s.gsub(/_/, ' ').split.map(&:capitalize).join(' ')}: "
+=======
+      season_holidays << "#{holiday.to_s.capitalize}: "
+>>>>>>> c3d1f86ffea25afd27eca1ff0765ae7a062ad8d0
       supplies.each do |i|
         if i != supplies.last
           season_holidays << "#{i}, "
@@ -69,7 +73,12 @@ def all_supplies_in_holidays(holiday_hash)
           season_holidays << "#{i}"
         end
       end
+<<<<<<< HEAD
       puts "  #{season_holidays}"
+=======
+      binding.pry
+      puts season_holidays
+>>>>>>> c3d1f86ffea25afd27eca1ff0765ae7a062ad8d0
     end
   end
 end
